@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form | Education For All</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/2921/2921222.png" type="image/x-icon">
+</head>
+<body>
+    <form action="">
+        <div class="container">
+        <div class="stepcontainer">
+            <div class="step stepactive" id="step1">
+                <img src="images/step1.png" alt="">
+                <p class="stepname">Personal Details</p>
+            </div>
+            <div class="step" id="step2">
+                <img src="images/step2.png" alt="">
+                <p class="stepname">Address and Bank Details</p>
+            </div>
+            <div class="step" id="step3">
+                <img src="images/step3.png" alt="">
+                <p class="stepname">Acadmic Details</p>
+            </div>
+            <div class="step" id="step4">
+                <img src="images/step4.png" alt="">
+                <p class="stepname">Preview and Submit</p>
+            </div>
+        </div>
+        <div class="mainpage">
+            <div class="personaldetails">
+                <div class="inputheading">Personal Details</div> <hr>
+                <div class="inputdetails">
+                    <div class="inputbox">
+                        <label for="name">Your full Name -</label>
+                        <input type="text" name="name" id="name" placeholder="Your full Name" required>
+                    </div>
+                    <div class="inputbox">
+                        <label for="gender">Your Gender -</label>
+                        <div class="genderbox">
+                            <input type="radio" name="gender" id="male" required>
+                            <label for="male">Male</label>
+                            <input type="radio" name="gender" id="female" required>
+                            <label for="female">Female</label>
+                        </div>
+                    </div>
+                    <div class="inputbox">
+                        <label for="Category">Your Category -</label>
+                        <select name="category" id="category" required>
+                            <option value="">---Category---</option>
+                            <option value="Unreserved">Unreserved</option>
+                            <option value="OBC">OBC</option>
+                            <option value="SC">SC</option>
+                            <option value="ST">ST</option>
+                            <option value="PWD">PWD</option>
+                        </select>
+                    </div>
+                    <div class="inputbox">
+                        <label for="date">Date of Birth -</label>
+                        <input type="date" name="date" id="date" required>
+                    </div>
+                    <div class="inputbox">
+                        <label for="email">Your Email -</label>
+                        <input type="email" name="email" id="email" placeholder="Email">
+                    </div>
+                    <div class="inputbox">
+                        <label for="number">Mobile Number -</label>
+                        <input type="tel" name="number" id="number" placeholder=" Mobile Number" required>
+                    </div>
+                </div>
+                <div class="inputheading">Parants Details</div> <hr>
+                <div class="inputdetails">
+                    <div class="inputbox">
+                        <label for="mothername">Mother's Name -</label>
+                        <input type="text" name="mothername" id="mothername" placeholder="Mother's Name" required>
+                    </div>
+                    <div class="inputbox">
+                        <label for="motherOccupation">Mother's Occupation -</label>
+                        <input type="text" name="motherOccupation" id="motherOccupation" placeholder="Mother's Occupation">
+                    </div>
+                    <div class="inputbox">
+                        <label for="mothercontact">Mother's Contact -</label>
+                        <input type="tel" name="mothercontact" id="mothercontact" placeholder="Mother's Contact">
+                    </div>
+                    <div class="inputbox">
+                        <label for="fathername">Father's Name -</label>
+                        <input type="text" name="fathername" id="fathername" placeholder="Father's Name" required>
+                    </div>
+                    <div class="inputbox">
+                        <label for="fatherOccupation">Father's Occupation -</label>
+                        <input type="text" name="fatherOccupation" id="fatherOccupation" placeholder="Father's Occupation">
+                    </div>
+                    <div class="inputbox">
+                        <label for="fathercontact">Father's Contact -</label>
+                        <input type="tel" name="fathercontact" id="fathercontact" placeholder="Father's Contact">
+                    </div>
+                </div>
+                <div class="btncontainer">
+                    <button type="button" class="button" id="nextpg1">Next <img src="images/next.png" alt=""></button>
+                </div>
+            </div>
+            <div class="additionaldetails">
+                <div class="inputheading">Bank Details</div> <hr>
+                <div class="inputdetails">
+                    <div class="inputbox">
+                        <label for="Bankname">Bank Name -</label>
+                        <input type="text" name="Bankname" id="Bankname" placeholder="Bank Name" required>
+                    </div>
+                    <div class="inputbox">
+                        <label for="bankname">Account Number -</label>
+                        <input type="number" name="bankname" id="bankname" placeholder="Account Number" required>
+                    </div>
+                    <div class="inputbox">
+                        <label for="confirmaccountnumber">Confirm Account Number -</label>
+                        <input type="number" name="confirmaccountnumber" id="confirmaccountnumber" placeholder="Confirm Account Number" required>
+                    </div>
+                    <div class="inputbox">
+                        <label for="ifsccode">IFSC Code -</label>
+                        <input type="text" name="ifsccode" id="ifsccode" placeholder="IFSC Code" required>
+                    </div>
+                    <div class="inputbox">
+                        <label for="branchcity">Branch City -</label>
+                        <input type="text" name="branchcity" id="branchcity" placeholder="Branch City" required>
+                    </div>
+                    <div class="inputbox">
+                        <label for="nominee">Do you have Nominee -</label>
+                        <select name="nominee" id="nominee">
+                            <option value="">---Select---</option>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="inputheading">Address Details</div> <hr>
+                <div class="inputdetails">
+                    <div class="inputbox">
+                        <label for="housenumber">Flat No. or House No. -</label>
+                        <input type="text" name="housenumber" id="housenumber" placeholder="Flat No. or House No." required>
+                    </div>
+                    <div class="inputbox">
+                        <label for="landmark">Landmark -</label>
+                        <input type="text" name="landmark" id="landmark" placeholder="Landmark">
+                    </div>
+                    <div class="inputbox">
+                        <label for="areaorlocality">Area or Locality -</label>
+                        <input type="text" name="areaorlocality" id="areaorlocality" placeholder="Area or Locality" required>
+                    </div>
+                    <div class="inputbox">
+                        <label for="district">District -</label>
+                        <input type="text" name="district" id="district" placeholder="District" required>
+                    </div>
+                    <div class="inputbox">
+                        <label for="state">State -</label>
+                        <input type="text" name="state" id="state" placeholder="State" required>
+                    </div>
+                    <div class="inputbox">
+                        <label for="pincode">Pin Code -</label>
+                        <input type="number" name="pincode" id="pincode" placeholder="Pin Code" required>
+                    </div>
+                </div>
+                <div class="btncontainer">
+                    <button type="button" class="button" id="backpg2"><img src="images/next.png" alt=""> Back</button>
+                    <button type="button" class="button" id="nextpg2">Next <img src="images/next.png" alt=""></button>
+                </div>
+            </div>
+            <div class="educationaldetails">
+                <div class="inputheading">School Details</div>
+                <div class="inputdetails">
+                    <div class="inputbox">
+                        <label for="schoolname">School Name -</label>
+                        <input type="text" name="schoolname" id="schoolname" placeholder="School Name" required>
+                    </div>
+                    <div class="inputbox">
+                        <label for="rollno">Board Roll Number -</label>
+                        <input type="number" name="rollno" id="rollno" placeholder="Board Roll Number" required>
+                    </div>
+                    <div class="inputbox">
+                        <label for="resultyear">Result Year -</label>
+                        <select name="resultyear" id="resultyear">
+                            <option value="">---Year---</option>
+                            <option value="2018">2018</option>
+                            <option value="2019">2019</option>
+                            <option value="2020">2020</option>
+                            <option value="2021">2021</option>
+                            <option value="2022">2022</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="inputheading">Class XIIth Subject Wise Marks</div>
+                <div class="inputdetails">
+                    <div class="inputbox eduinputbox">
+                        <select name="sub1" id="sub1">
+                            <option value="">--Select Subject--</option>
+                            <option value="Accountancy">Accountancy</option>
+                            <option value="Business Studies">Business Studies</option>
+                            <option value="Economics">Economics</option>
+                            <option value="English Core">English Core</option>
+                            <option value="Mathematics">Mathematics</option>
+                            <option value="Office Pro. & Prac.">Office Pro. & Prac.</option>
+                            <option value="Not Applicable">Not Applicable</option>
+                        </select>
+                        <input type="number" class="80marks" name="theorymarkssub1" id="theorymarkssub1" placeholder="Marks Obtained in Theory">
+                        <input type="number" name="practicalmarkssub1" id="practicalmarkssub1" placeholder="Marks Obtained in Practical">
+                        <input type="number" name="totalmarkssub1" id="totalmarkssub1" readonly placeholder="Total Marks Obtained">
+                    </div>
+                    <div class="inputbox eduinputbox">
+                        <select name="sub2" id="sub2">
+                            <option value="">--Select Subject--</option>
+                            <option value="Accountancy">Accountancy</option>
+                            <option value="Business Studies">Business Studies</option>
+                            <option value="Economics">Economics</option>
+                            <option value="English Core">English Core</option>
+                            <option value="Mathematics">Mathematics</option>
+                            <option value="Office Pro. & Prac.">Office Pro. & Prac.</option>
+                            <option value="Not Applicable">Not Applicable</option>
+                        </select>
+                        <input type="number" class="80marks" name="theorymarkssub2" id="theorymarkssub2" placeholder="Marks Obtained in Theory">
+                        <input type="number" name="practicalmarkssub2" id="practicalmarkssub2" placeholder="Marks Obtained in Practical">
+                        <input type="number" name="totalmarkssub2" id="totalmarkssub2" readonly placeholder="Total Marks Obtained">
+                    </div>
+                    <div class="inputbox eduinputbox">
+                        <select name="sub1" id="sub3">
+                            <option value="">--Select Subject--</option>
+                            <option value="Accountancy">Accountancy</option>
+                            <option value="Business Studies">Business Studies</option>
+                            <option value="Economics">Economics</option>
+                            <option value="English Core">English Core</option>
+                            <option value="Mathematics">Mathematics</option>
+                            <option value="Office Pro. & Prac.">Office Pro. & Prac.</option>
+                            <option value="Not Applicable">Not Applicable</option>
+                        </select>
+                        <input type="number" name="theorymarkssub3" id="theorymarkssub3" placeholder="Marks Obtained in Theory">
+                        <input type="number" name="practicalmarkssub3" id="practicalmarkssub3" placeholder="Marks Obtained in Practical">
+                        <input type="number" name="totalmarkssub3" id="totalmarkssub3" readonly placeholder="Total Marks Obtained">
+                    </div>
+                    <div class="inputbox eduinputbox">
+                        <select name="sub1" id="sub4">
+                            <option value="">--Select Subject--</option>
+                            <option value="Accountancy">Accountancy</option>
+                            <option value="Business Studies">Business Studies</option>
+                            <option value="Economics">Economics</option>
+                            <option value="English Core">English Core</option>
+                            <option value="Mathematics">Mathematics</option>
+                            <option value="Office Pro. & Prac.">Office Pro. & Prac.</option>
+                            <option value="Not Applicable">Not Applicable</option>
+                        </select>
+                        <input type="number" name="theorymarkssub4" id="theorymarkssub4" placeholder="Marks Obtained in Theory">
+                        <input type="number" name="practicalmarkssub4" id="practicalmarkssub4" placeholder="Marks Obtained in Practical">
+                        <input type="number" name="totalmarkssub4" id="totalmarkssub4" readonly placeholder="Total Marks Obtained">
+                    </div>
+                    <div class="inputbox eduinputbox">
+                        <select name="sub1" id="sub5">
+                            <option value="">--Select Subject--</option>
+                            <option value="Accountancy">Accountancy</option>
+                            <option value="Business Studies">Business Studies</option>
+                            <option value="Economics">Economics</option>
+                            <option value="English Core">English Core</option>
+                            <option value="Mathematics">Mathematics</option>
+                            <option value="Office Pro. & Prac.">Office Pro. & Prac.</option>
+                            <option value="Not Applicable">Not Applicable</option>
+                        </select>
+                        <input type="number" name="theorymarkssub5" id="theorymarkssub5" placeholder="Marks Obtained in Theory">
+                        <input type="number" name="practicalmarkssub5" id="practicalmarkssub5" placeholder="Marks Obtained in Practical">
+                        <input type="number" name="totalmarkssub5" id="totalmarkssub5" readonly placeholder="Total Marks Obtained">
+                    </div>
+                    <div class="inputbox eduinputbox">
+                        <select name="sub1" id="sub6">
+                            <option value="">--Select Subject--</option>
+                            <option value="Accountancy">Accountancy</option>
+                            <option value="Business Studies">Business Studies</option>
+                            <option value="Economics">Economics</option>
+                            <option value="English Core">English Core</option>
+                            <option value="Mathematics">Mathematics</option>
+                            <option value="Office Pro. & Prac.">Office Pro. & Prac.</option>
+                            <option value="Not Applicable">Not Applicable</option>
+                        </select>
+                        <input type="number" name="theorymarkssub6" id="theorymarkssub6" placeholder="Marks Obtained in Theory">
+                        <input type="number" name="practicalmarkssub6" id="practicalmarkssub6" placeholder="Marks Obtained in Practical">
+                        <input type="number" name="totalmarkssub6" id="totalmarkssub6" readonly placeholder="Total Marks Obtained">
+                    </div>
+                    <div class="inputbox eduinputbox">
+                        <select name="sub1" id="sub7">
+                            <option value="">--Select Subject--</option>
+                            <option value="Accountancy">Accountancy</option>
+                            <option value="Business Studies">Business Studies</option>
+                            <option value="Economics">Economics</option>
+                            <option value="English Core">English Core</option>
+                            <option value="Mathematics">Mathematics</option>
+                            <option value="Office Pro. & Prac.">Office Pro. & Prac.</option>
+                            <option value="Not Applicable">Not Applicable</option>
+                        </select>
+                        <input type="number" name="theorymarkssub7" id="theorymarkssub7" placeholder="Marks Obtained in Theory">
+                        <input type="number" name="practicalmarkssub7" id="practicalmarkssub7" placeholder="Marks Obtained in Practical">
+                        <input type="number" name="totalmarkssub7" id="totalmarkssub7" readonly placeholder="Total Marks Obtained">
+                    </div>
+                </div>
+                <div class="btncontainer">
+                    <button type="button" class="button" id="backpg3"><img src="images/next.png" alt=""> Back</button>
+                    <button type="submit" class="button" id="submit">Submit <img src="images/next.png" alt=""></button>
+                </div>
+            </div>
+            <div class="previewdetails">
+                <!-- <div class="inputheading"></div> -->
+                <!-- <div class="inputdetails"></div> -->
+            </div>
+        </div>
+        </div>
+    </form>
+    <script src="index.js"></script>
+</body>
+</html>

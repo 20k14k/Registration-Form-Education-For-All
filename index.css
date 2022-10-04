@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+:root{
+    --text-black: black;
+    --placeholder-text: #A09998;
+    --white-text: white;
+    --btn-bg: #0072B5;
+    --web-bg: #155069;
+    --red: #FA255E;
+    --light-bg-blue: #3fb0ac;
+    --dark-bg-blue: #245e65;
+    --underline-blue: #009B77;
+    --alert-red: #DD4124;
+    --border-grey: #939597;
+    --border-black: #363945;
+    --shaddow-black: rgba(0, 0, 0, 0.752);
+    --green: #04AA6D;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--web-bg);
+}
+.container{
+    width: 85vw;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+    border: solid 2px var(--border-black);
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px var(--shaddow-black);
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.container::-webkit-scrollbar{
+    display: none;
+    
+}
+.stepcontainer{
+    width: 85vw;
+    height: 15vh;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.75rem;
+}
+
+.step{
+    width: calc(85vw / 4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 1;
+    border: solid 2px var(--border-black);
+    border-radius: 5px;
+    margin: 0 0.5rem;
+    padding: 00.25rem;
+    cursor: pointer;
+    background-color: var(--light-bg-blue);
+    box-shadow: 0px -1px 10px var(--shaddow-black);
+    transition: all 0.5s linear;
+}
+.step img{
+    width: 12vw;
+}
+.stepname{
+    font-size: 0.9rem;
+}
+.stepactive{
+    background-color: var(--light-bg-blue);
+    box-shadow: 0px 0px 5px var(--shaddow-black) inset;
+    font-weight: 600;
+}
+
+
+
+/* ------ mainpage css ------ */
+
+.mainpage{
+    min-height: 78vh;
+    width: 85vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* ------- personal details css------ */
+
+.personaldetails{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    min-height: 78vh;
+    width: 85vw;
+    background-color: var(--white-text);
+    padding: 0.5rem 1.5rem;
+    transition: all 0.3s linear;
+}
+.removepage1{
+    opacity: 0;
+    pointer-events: none;
+}
+
+.inputheading{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+hr{
+    background-color: var(--red);
+    height: 3px;
+    width: 3rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.inputdetails{
+    width: 100%;
+    padding: 0.5rem 0rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.inputbox{
+    width: 23rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0.5rem 0rem;
+}
+
+label{
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0rem 0.5rem;
+    cursor: pointer;
+}
+
+input[type = text], input[type = date], input[type = email], input[type = number], input[type = tel], .genderbox, select{
+    width: 16rem;
+    height: 2rem ;
+    font-size: 0.95rem;
+    color: black;
+    border: none;
+    outline: 1px solid var(--border-grey);
+    border-radius: 3px;
+    padding: 0.23rem 0.45rem;
+    margin-left: 3rem;
+    margin-top: 0.5rem;
+    font-weight: 500;
+}
+input[type = date], select{
+    color: var(--placeholder-text);
+    cursor: pointer;
+}
+
+input[type = date]:valid, select:valid{
+    color: black;
+}
+.genderbox{
+    display: flex;
+    align-items: center;
+}
+::placeholder{
+    color: var(--placeholder-text);
+}
+
+
+input:focus{
+    outline: 2px solid var(--btn-bg);
+}
+input[type = radio]:focus{
+    outline: none;
+}
+
+input:autofill {
+    border: 2px solid var(--btn-bg);
+    background: none;
+}
+input:-webkit-autofill {
+    border: 2px solid var(--btn-bg);
+    background: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* ----- buton css----- */
+.btncontainer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.button{
+    width: 10rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--white-text);
+    border: none;
+    border-radius: 3px;
+    background-color: var(--btn-bg);
+    cursor: pointer;
+    transition: font-weight 0.3s linear;
+}
+.button:hover{
+    font-weight: 550;
+}
+.button img{
+    width: 25px;
+    margin-left: 0.65rem;
+}
+
+
+/* ---------- additional details ------ */
+.additionaldetails{
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 78vh;
+    width: 85vw;
+    padding: 0.5rem 1.5rem;
+    z-index: -1;
+    display: block;
+    background-color: var(--white-text);
+    transition: all 0.2s ease;
+}
+.activepage2{
+    z-index: 1;
+}
+.removepage2{
+    opacity: 0;
+    pointer-events: none;
+}
+#backpg2, #backpg3{
+    margin-right: 2rem;
+}
+#backpg2 img, #backpg3 img{
+    rotate: 180deg;
+    margin-right: 0.65rem;
+}
+
+
+
+
+/* ---------- educational details--------- */
+
+.educationaldetails{
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 78vh;
+    width: 85vw;
+    padding: 0.5rem 1.5rem;
+    z-index: -2;
+    display: block;
+    background-color: var(--white-text);
+    transition: all 0.3s;
+}
+
+
+.eduinputbox{
+    width: 82vw;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.eduinputbox input, .eduinputbox select{
+    width: 14rem;
+    margin: 0.1rem 0;
+    margin-left: 2rem;
+}
+.inputdetails select{
+    color: var(--placeholder-text);
+}
+.inputdetails select:valid{
+    color: var(--text-black);
+}
+
+.activepage3{
+    z-index: 2;
+}
+.removepage3{
+    opacity: 0;
+    pointer-events: none;
+}
+#submit img{
+    rotate: 270deg;
+}
+
+
+@media (max-width: 450px){
+    html {
+    font-size: 12px;
+  }
+}
